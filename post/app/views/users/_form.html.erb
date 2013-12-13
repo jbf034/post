@@ -1,0 +1,36 @@
+<%= form_for(@user,:html=>{:multipart=>true}) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <div class="field">
+   <%=file_field_tag :attachment%>
+   </div>
+  <div class="field">
+    <%= f.label :主题 %>  <%= f.text_field :fname %>
+  </div>
+  <div class="field">
+	<%=f.label :班级%>
+  <%=f.select :bj_id,Bj.all.collect{|p| [p.bj_name,p.bj_num]}%>
+  </div>
+  <div class="field">
+    <%= f.label :作者 %>    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+  <%= f.label :备注 %>
+    <%= f.text_area(:content,size:"20x10") %>
+  </div>
+    <div class="actions">
+    <%= f.submit "上传"%>
+  </div>
+
+ 
+<% end %>

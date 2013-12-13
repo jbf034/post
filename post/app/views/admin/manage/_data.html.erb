@@ -1,0 +1,64 @@
+
+<h1>lcoate data</h1>
+	<div class="row-fluid">
+		<div class="span12">
+				<a>查找方式</a>
+				  <%=form_tag('/admin/seek')%>
+						<%=select_tag "field","<option value='id'>编号</option><option value='name'>作者</option><option value='bj_id'>班级</option><option value='attachment'>附件</option>".html_safe%>
+						<a>等于</a>
+						<%=text_field_tag :seek_value,'',size: 20%>
+						<%=submit_tag "查找",class:"btn"%>
+		</div>
+	</div>
+
+<script>
+  $(document).ready(function(){
+		  $("#del").click(function(){
+			  var delid=new Array();
+			  for(var i=0,j=0;i<checkbox1.length;i++){
+			   
+				if(checkbox1[i].checked){
+				  delid[j++]=checkbox1[i].value;
+				};
+
+			  };
+		    	$.ajax({
+					url:'/admin/delete_id',
+					type:'POST',
+					dataType:'json',
+					data:{'id':delid},
+					dataType:'json',
+					timeout:1000,
+				    success:function(data){ alert("一共删除 "+data+" 条记录");
+					location.reload();
+					} 
+
+					});
+					
+			});
+	  });
+</script>
+<table class="table">
+  <thead>  
+	<tr><th><input type="checkbox" id="allcheck">选择</th><th>编号</th><th>作者</th><th>班级</th><th>作品</th><th>附件</th>
+  </thead>
+  <tbody>
+
+    <%@user.each do |p|%>
+	 	  <tr>
+      <td><input name="checkbox1" type="checkbox" value=<%=p.id%>></td>
+	  <td><%=p.id%></td>
+	  <td><%=p.name%></td>
+	  <td><%=p.bj.bj_name%></td>
+	  <td><%=p.fname%></td>
+ <%p.attachments.each do |att|%>
+
+	  <td><%=att.attachment.thumb%></td>
+	  </tr>
+	  <%end%>
+	<%end%>
+	<input type="button" id="del" class="btn" value="删除">
+	
+  </tbody>
+</table>
+<div class="apple_pagination",align=right><%=will_paginate @user%></div>

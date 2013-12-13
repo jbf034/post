@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="zh-CN">
+<head>
+  <title>实验小学作品集</title>
+<meta name="viewpost" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+<%= javascript_include_tag "application"%>
+ <%= csrf_meta_tags %>
+</head>
+
+  <div class="container-fluid">
+   <div class="row-fluid">
+	  <br/>	
+	  <div class="navbar">
+			<div class="navbar-inner">
+					<a class="brand">文成实验小学作品集</a>
+									 <ul class="nav">
+<!--menu-------- -->
+					<li class="active"><a href="/users">精品区</a></li>
+					<li><a href="/seach/now_upload">最新上传</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">选择班级<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						    <%Bj.all.each  do |p|%>
+							<li><a href=<%="/seach/bj#{p.bj_num}"%>><%=p.bj_name%></a></li>
+							<%end%>	
+						</ul>
+					</li>
+				
+			       <li>	<button class="btn"  data-toggle="modal" data-target="#myModal">管理</button></li><li>&nbsp;&nbsp;</li>
+				   <li><%=button_to '上传' ,new_user_path,class:'btn'%></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><%=form_tag '/seach/option'%><%=text_field_tag 'seek_value','输入姓名查找',class:'input-medium search-query'%> &nbsp; &nbsp;<button class="btn"type="submit">查找</button></li>
+			      </ul>
+			</div>
+		</div> 
+	</div>
+</div>
+<% if flash[:notice]-%>
+<%=flash[:notice]%>
+<%end -%>
+<div class="container-fluid">
+<body>
+
+	<div >
+		<%=yield%>
+	 </div>
+<!--Modal-->
+<script>
+   $(document).ready(function(){
+		 $('#login').click(function(){
+			var  username=$("#username").val();
+    		var  password=$("#pwd").val();
+	    	$.ajax({
+				url:'/admin/login',
+				type:'post',
+				dataType:'json',
+				timeout:1000,
+				data:{'username':username,'password':password},
+				success:function(data){
+						if (data!=0) 
+						self.location.href="/admin/seek/"+data;  
+						else
+						  $('#loginys').text("登录失败，请检查用户名或密码");
+						  }
+				});
+			 
+			 });
+		 $('#cancel').click(function(){
+			 $("#username").val('');
+			 $("#pwd").val('');
+			 });
+			 
+     });
+</script>
+   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">	    <h3>管理员登录</h3>		</div>
+	  <div class="modal-body"> 
+	  <p>
+			<label>用户名:</label><input type="text" size:10 id="username">
+				<label>密  码:</label><input type="password" size:10 id="pwd"><br/>
+	            <button id='login' type="button" class="btn">登录</button>
+	  <button class="btn" id='cancel' data-dismiss="modal" aria-hidden="true">取消</button>
+	  </p>
+	  <div class="modal-footer" id="loginys"></div>
+   </div>
+</body>
+</div>
+</html>

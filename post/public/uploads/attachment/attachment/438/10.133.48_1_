@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="zh-CN">
+<head>
+  <title>实验小学作品集</title>
+<meta name="viewpost" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="/assets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/admins.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/bjs.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/bootstrap.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/jquery.rating.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/scaffolds.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/users.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/will_paginate.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/admins.js?body=1" type="text/javascript"></script>
+<script src="/assets/bjs.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery.cookie.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery.form.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery.rating.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery.rating.pack.js?body=1" type="text/javascript"></script>
+<script src="/assets/users.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+ <meta content="authenticity_token" name="csrf-param" />
+<meta content="woPTXvBloBXVqBQfJqqsk60SPfnoyg5Dx7xXZ2t/FVU=" name="csrf-token" />
+</head>
+  <div class="container-fluid">
+   <div class="row-fluid">
+      <div class="span12">
+	  <br/>	
+	  <div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand">文成实验小学作品集</a>
+				  <div class="span4">
+				  <ul class="nav">
+<!--menu-------- -->
+					<li class="active"><a href="#">精品区</a></li>
+					<li><a href="/seach/now_upload">最新上传</a></li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">选择班级<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href=/seach/bj201101>三年（1）</a></li>
+							<li><a href=/seach/bj201102>三年（2）</a></li>
+							<li><a href=/seach/bj201103>三年（3）</a></li>
+							<li><a href=/seach/bj201104>三年（4）</a></li>
+							<li><a href=/seach/bj201105>三年（5）</a></li>
+							<li><a href=/seach/bj201106>三年（6）</a></li>
+							<li><a href=/seach/bj201107>三年（7）</a></li>
+							<li><a href=/seach/bj201108>三年（8）</a></li>
+						</ul>
+					</li>
+
+				</ul>
+					</div>
+				<div class="span5"><button class="btn"  data-toggle="modal" data-target="#myModal">管理</button>
+   	<a href="/users/new" class="btn">上传</a>&nbsp;&nbsp; &nbsp; &nbsp; <input class="input-medium search-query" type="text"/><button class="btn"type="submit">查找</button></div>
+			</div>
+		 </div>
+
+	  </div>
+
+	
+
+	 
+	</div>
+</div>
+<div class="container-fluid">
+<body>
+	<div >
+		<div class="row">
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>坚强的大树</b></h5>
+		<h7>上传日期：2013-12-10 06:14:31 UTC</h7>
+			<a href="/users/502"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/422/thumb______.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>孟家炜</b><br/>
+			 备注:...<br/>
+			 星星数：10
+<!--<a href="/users/502/edit">编辑</a> | <a href="/users/502" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>鸡蛋中的小鸡</b></h5>
+		<h7>上传日期：2013-12-10 06:13:58 UTC</h7>
+			<a href="/users/501"><img alt="Thumb_______" height="200" src="/uploads/attachment/attachment/421/thumb_______.bmp" width="200" /></a>
+			 班级：<b>三年（1）</b>&nbsp; 作者:<b>胡王倩</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/501/edit">编辑</a> | <a href="/users/501" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>最大的鱼</b></h5>
+		<h7>上传日期：2013-12-10 06:13:48 UTC</h7>
+			<a href="/users/500"><img alt="Thumb_____" height="200" src="/uploads/attachment/attachment/420/thumb_____.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>雷家豪</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/500/edit">编辑</a> | <a href="/users/500" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>我们的家</b></h5>
+		<h7>上传日期：2013-12-10 06:13:42 UTC</h7>
+			<a href="/users/499"><img alt="Assets" height="200" src="/assets/" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>李周浩</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/499/edit">编辑</a> | <a href="/users/499" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>yuty</b></h5>
+		<h7>上传日期：2013-12-10 06:13:25 UTC</h7>
+			<a href="/users/498"><img alt="Thumb_z" height="200" src="/uploads/attachment/attachment/418/thumb_z.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>赵林毅</b><br/>
+			 备注:...<br/>
+			 星星数：10
+<!--<a href="/users/498/edit">编辑</a> | <a href="/users/498" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>yuty</b></h5>
+		<h7>上传日期：2013-12-10 06:13:22 UTC</h7>
+			<a href="/users/497"><img alt="Thumb_z" height="200" src="/uploads/attachment/attachment/417/thumb_z.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>赵林毅</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/497/edit">编辑</a> | <a href="/users/497" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>yuty</b></h5>
+		<h7>上传日期：2013-12-10 06:13:21 UTC</h7>
+			<a href="/users/496"><img alt="Thumb_z" height="200" src="/uploads/attachment/attachment/416/thumb_z.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>赵林毅</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/496/edit">编辑</a> | <a href="/users/496" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>雷雨中的大树</b></h5>
+		<h7>上传日期：2013-12-10 06:12:54 UTC</h7>
+			<a href="/users/495"><img alt="Thumb_______" height="200" src="/uploads/attachment/attachment/415/thumb_______.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>胡煊晟</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/495/edit">编辑</a> | <a href="/users/495" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>雷雨中的大树</b></h5>
+		<h7>上传日期：2013-12-10 06:12:52 UTC</h7>
+			<a href="/users/494"><img alt="Thumb_______" height="200" src="/uploads/attachment/attachment/414/thumb_______.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>胡煊晟</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/494/edit">编辑</a> | <a href="/users/494" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>雷雨中的大树</b></h5>
+		<h7>上传日期：2013-12-10 06:12:50 UTC</h7>
+			<a href="/users/493"><img alt="Thumb_______" height="200" src="/uploads/attachment/attachment/413/thumb_______.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>胡煊晟</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/493/edit">编辑</a> | <a href="/users/493" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>可爱娃娃脸</b></h5>
+		<h7>上传日期：2013-12-10 06:12:26 UTC</h7>
+			<a href="/users/492"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/412/thumb______.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>叶子昕</b><br/>
+			 备注:...<br/>
+			 星星数：8
+<!--<a href="/users/492/edit">编辑</a> | <a href="/users/492" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>闹钟猫</b></h5>
+		<h7>上传日期：2013-12-10 06:11:24 UTC</h7>
+			<a href="/users/491"><img alt="Thumb_nao__zhong___mao" height="200" src="/uploads/attachment/attachment/411/thumb_NAO__ZHONG___MAO.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>叶恒</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/491/edit">编辑</a> | <a href="/users/491" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>闹钟</b></h5>
+		<h7>上传日期：2013-12-10 06:08:12 UTC</h7>
+			<a href="/users/490"><img alt="Thumb___" height="200" src="/uploads/attachment/attachment/410/thumb___.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>郑确</b><br/>
+			 备注:...<br/>
+			 星星数：5
+<!--<a href="/users/490/edit">编辑</a> | <a href="/users/490" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>我的校园</b></h5>
+		<h7>上传日期：2013-12-10 05:48:26 UTC</h7>
+			<a href="/users/489"><img alt="Thumb_abc" height="200" src="/uploads/attachment/attachment/409/thumb_abc.bmp" width="200" /></a>
+			 班级：<b>三年（6）</b>&nbsp; 作者:<b>jpf</b><br/>
+			 备注:...<br/>
+			 星星数：16
+<!--<a href="/users/489/edit">编辑</a> | <a href="/users/489" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>形状王国</b></h5>
+		<h7>上传日期：2013-12-09 07:11:23 UTC</h7>
+			<a href="/users/486"><img alt="Thumb_____" height="200" src="/uploads/attachment/attachment/408/thumb_____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>陈伊凡</b><br/>
+			 备注:好多形状啊！真美！...<br/>
+			 星星数：10
+<!--<a href="/users/486/edit">编辑</a> | <a href="/users/486" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>完美的心和破碎的心</b></h5>
+		<h7>上传日期：2013-12-09 07:10:57 UTC</h7>
+			<a href="/users/483"><img alt="Thumb________" height="200" src="/uploads/attachment/attachment/407/thumb________.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>王伊静</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/483/edit">编辑</a> | <a href="/users/483" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>完美的心和破碎的心</b></h5>
+		<h7>上传日期：2013-12-09 07:10:55 UTC</h7>
+			<a href="/users/482"><img alt="Thumb________" height="200" src="/uploads/attachment/attachment/406/thumb________.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>王伊静</b><br/>
+			 备注:...<br/>
+			 星星数：0
+<!--<a href="/users/482/edit">编辑</a> | <a href="/users/482" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>美丽校园</b></h5>
+		<h7>上传日期：2013-12-09 07:09:47 UTC</h7>
+			<a href="/users/481"><img alt="Thumb_____" height="200" src="/uploads/attachment/attachment/405/thumb_____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>吴莉莹</b><br/>
+			 备注:校园最美丽...<br/>
+			 星星数：14
+<!--<a href="/users/481/edit">编辑</a> | <a href="/users/481" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>穿越火线的刀</b></h5>
+		<h7>上传日期：2013-12-09 07:09:44 UTC</h7>
+			<a href="/users/480"><img alt="Thumb____" height="200" src="/uploads/attachment/attachment/404/thumb____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>赵文韬</b><br/>
+			 备注:让更多的人认识穿越火线...<br/>
+			 星星数：60
+<!--<a href="/users/480/edit">编辑</a> | <a href="/users/480" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>美丽校园</b></h5>
+		<h7>上传日期：2013-12-09 07:09:41 UTC</h7>
+			<a href="/users/479"><img alt="Thumb_____" height="200" src="/uploads/attachment/attachment/403/thumb_____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>吴莉莹</b><br/>
+			 备注:校园最美丽...<br/>
+			 星星数：0
+<!--<a href="/users/479/edit">编辑</a> | <a href="/users/479" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>我的城堡</b></h5>
+		<h7>上传日期：2013-12-09 07:08:01 UTC</h7>
+			<a href="/users/478"><img alt="Thumb_____" height="200" src="/uploads/attachment/attachment/402/thumb_____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>刘伊倩</b><br/>
+			 备注:城堡真美...<br/>
+			 星星数：5
+<!--<a href="/users/478/edit">编辑</a> | <a href="/users/478" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>我的城堡</b></h5>
+		<h7>上传日期：2013-12-09 07:07:33 UTC</h7>
+			<a href="/users/477"><img alt="Thumb_____" height="200" src="/uploads/attachment/attachment/401/thumb_____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>刘伊倩</b><br/>
+			 备注:城堡真美...<br/>
+			 星星数：0
+<!--<a href="/users/477/edit">编辑</a> | <a href="/users/477" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>梦中的房子</b></h5>
+		<h7>上传日期：2013-12-09 07:06:12 UTC</h7>
+			<a href="/users/475"><img alt="Thumb____" height="200" src="/uploads/attachment/attachment/400/thumb____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>黄炜瑶</b><br/>
+			 备注:在我睡觉的时候、、、、...<br/>
+			 星星数：35
+<!--<a href="/users/475/edit">编辑</a> | <a href="/users/475" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>天气大闹钟</b></h5>
+		<h7>上传日期：2013-12-09 07:05:05 UTC</h7>
+			<a href="/users/474"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/399/thumb______.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>周叶涛</b><br/>
+			 备注:我喜欢它...<br/>
+			 星星数：7
+<!--<a href="/users/474/edit">编辑</a> | <a href="/users/474" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>小星星</b></h5>
+		<h7>上传日期：2013-12-09 07:05:02 UTC</h7>
+			<a href="/users/473"><img alt="Thumb____" height="200" src="/uploads/attachment/attachment/398/thumb____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>李洁</b><br/>
+			 备注:我喜欢星星...<br/>
+			 星星数：28
+<!--<a href="/users/473/edit">编辑</a> | <a href="/users/473" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>天气大闹钟</b></h5>
+		<h7>上传日期：2013-12-09 07:05:01 UTC</h7>
+			<a href="/users/472"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/397/thumb______.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>周叶涛</b><br/>
+			 备注:我喜欢它...<br/>
+			 星星数：2
+<!--<a href="/users/472/edit">编辑</a> | <a href="/users/472" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>小星星</b></h5>
+		<h7>上传日期：2013-12-09 07:05:00 UTC</h7>
+			<a href="/users/471"><img alt="Thumb____" height="200" src="/uploads/attachment/attachment/396/thumb____.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>李洁</b><br/>
+			 备注:我喜欢星星...<br/>
+			 星星数：8
+<!--<a href="/users/471/edit">编辑</a> | <a href="/users/471" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>天气大闹钟</b></h5>
+		<h7>上传日期：2013-12-09 07:04:58 UTC</h7>
+			<a href="/users/470"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/395/thumb______.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>周叶涛</b><br/>
+			 备注:我喜欢它...<br/>
+			 星星数：1
+<!--<a href="/users/470/edit">编辑</a> | <a href="/users/470" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>天气大闹钟</b></h5>
+		<h7>上传日期：2013-12-09 07:04:57 UTC</h7>
+			<a href="/users/469"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/394/thumb______.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>周叶涛</b><br/>
+			 备注:我喜欢它...<br/>
+			 星星数：0
+<!--<a href="/users/469/edit">编辑</a> | <a href="/users/469" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b>天气大闹钟</b></h5>
+		<h7>上传日期：2013-12-09 07:04:55 UTC</h7>
+			<a href="/users/468"><img alt="Thumb______" height="200" src="/uploads/attachment/attachment/393/thumb______.png" width="200" /></a>
+			 班级：<b>三年（2）</b>&nbsp; 作者:<b>周叶涛</b><br/>
+			 备注:我喜欢它...<br/>
+			 星星数：0
+<!--<a href="/users/468/edit">编辑</a> | <a href="/users/468" data-confirm="确定要删除嘛?" data-method="delete" rel="nofollow">删除</a>
+-->
+		 </div>
+	 </div>
+
+
+</div>
+<div class="apple_pagination",align=center><div class="apple_pagination"><span class="previous_page disabled">前一页</span> <em class="current">1</em> <a rel="next" href="/users?page=2">2</a> <a href="/users?page=3">3</a> <a href="/users?page=4">4</a> <a href="/users?page=5">5</a> <a href="/users?page=6">6</a> <a href="/users?page=7">7</a> <a class="next_page" rel="next" href="/users?page=2">后一页</a></div></div>
+
+
+	 </div>
+<!--Modal-->
+<script>
+   $(document).ready(function(){
+		 $('#login').click(function(){
+			var  username=$("#username").val();
+    		var  password=$("#pwd").val();
+	    	$.ajax({
+				url:'/admins/login',
+				type:'post',
+				dataType:'json',
+				timeout:1000,
+				data:{'username':username,'password':password},
+				success:function(data){
+						if (data!=0) 
+						self.location.href="/seek/"+data;  
+						else
+						  $('#loginys').text("登录失败，请检查用户名或密码");
+						  }
+				});
+			 
+			 });
+		 $('#cancel').click(function(){
+			 $("#username").val('');
+			 $("#pwd").val('');
+			 });
+			 
+     });
+</script>
+   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">	    <h3>管理员登录</h3>		</div>
+	  <div class="modal-body"> 
+	  <p>
+			<label>用户名:</label><input type="text" size:10 id="username">
+				<label>密  码:</label><input type="password" size:10 id="pwd"><br/>
+	            <button id='login' type="button" class="btn">登录</button>
+	  <button class="btn" id='cancel' data-dismiss="modal" aria-hidden="true">取消</button>
+	  </p>
+	  <div class="modal-footer" id="loginys"></div>
+   </div>
+</body>
+</div>
+</html>

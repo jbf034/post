@@ -1,0 +1,61 @@
+<div class="span12" >
+<script>
+   $(function(){
+		   
+			if($.cookie('image_'+$('#attachment_id').val())=='true'){
+			 $('.auto-submit-star').rating();
+			 $('.auto-submit-star').rating('readOnly',true);
+			 $('#rated').text('(本机今日已评星)');
+			 }
+
+				else{
+			$('.auto-submit-star').rating({
+				  callback: function(value,link){
+					    $.ajax({
+						url:'add_grade',
+						type:'POST',
+						data:{'rate':value,'attachment_id':$('#attachment_id').val()},
+						dataType:'json',
+						timeout:1000,
+						success:function(data){
+						$.cookie('image_'+$('#attachment_id').val(),'true',{expires:1});
+						$('#rated').text('(本机今日已评星)');
+						$('#grade').text(data);}
+						});
+				$('.auto-submit-star').rating('readOnly',true);
+					}
+				});
+			}
+			});
+</script>
+<form id="form3a">
+  <div class="Clear">
+    <input class="auto-submit-star" type="radio" name="rating-1" value="1"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="2"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="3"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="4"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="5"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="6"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="7"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="8"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="9"/>
+    <input class="auto-submit-star" type="radio" name="rating-1" value="10"/>
+	</div><b id='rated'></b>
+</form>
+<div>
+<p id="notice"><%= notice %></p>
+<table>
+<tr><td><%=link_to '返回',users_path%> | <%link_to'编辑',edit_user_path(@user)%> | <%link_to'删除',user_path(@user),method: :delete,data:{confirm: "确定要删除嘛?"}%>
+主题:<b> <%= @user.fname %></b>  班级:<b><%=@user.bj.bj_name%></b>   作者：<b><%=@user.name%></b></td></tr>
+
+<tr><td><% @user.attachments.each do |attachment| %>
+  <%=image_tag attachment.attachment.url(:preview)%>
+<tr><td>  <b>内容:</b>  <%= @user.content %></td></tr>
+
+<%=hidden_field_tag 'attachment_id',attachment.id%>
+<%=hidden_field_tag 'created_at',attachment.created_at%>
+<div>总共 <b id="grade""><%=attachment.grade%></b> 颗星</div>
+<%end%>
+</table>
+	</div>
+</div>

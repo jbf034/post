@@ -1,0 +1,22 @@
+<div class="row">
+<%@users.each do |user| %>
+    <div class="span3" > 
+	 
+      <div class="thumbnail">
+	  <h5>作品:<b><%=user.fname[0..8]%></b></h5>
+		<h7>上传日期：<%=user.created_at%></h7>
+	    <% user.attachments.each do |attachment|%>
+			<%=link_to image_tag(attachment.attachment.url(:thumb),size:"200x200"),user%>
+			 班级：<b><%=user.bj.bj_name%></b>&nbsp; 作者:<b><%=user.name%></b><br/>
+			 备注:<%=user.content[0..10]%>...<br/>
+			 星星数：<%=attachment.grade%>
+		 <%end%>
+<!--<%=link_to'编辑',edit_user_path(user)%> | <%=link_to'删除',user_path(user),method: :delete,data:{confirm: "确定要删除嘛?"}%>
+-->
+		 </div>
+	 </div>
+
+<%end%>
+
+</div>
+<div class="apple_pagination",align=center><%=will_paginate @users%></div>

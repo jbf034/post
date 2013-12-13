@@ -1,0 +1,25 @@
+<%= form_for(@bj) do |f| %>
+  <% if @bj.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bj.errors.count, "error") %> prohibited this bj from being saved:</h2>
+
+      <ul>
+      <% @bj.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bj_num %><br />
+    <%= f.text_field :bj_num %>
+  </div>
+  <div class="field">
+    <%= f.label :bj_name %><br />
+    <%= f.text_field :bj_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
