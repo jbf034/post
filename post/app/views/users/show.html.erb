@@ -49,7 +49,20 @@
 主题:<b> <%= @user.fname %></b>  班级:<b><%=@user.bj.bj_name%></b>   作者：<b><%=@user.name%></b></td></tr>
 
 <tr><td><% @user.attachments.each do |attachment| %>
+<%if attachment.content_type=='sb' then%>
+<div class="container">
+<!--Scratch project START-->
+<applet id="PrljectApplet"
+ style="display:block"
+ code="ScratchApplet" codebase="/."
+ archive="ScratchApplet.jar" height="387" width="482">
+ <param name="project" value="<%=attachment.attachment.url%>">
+ </applet>
+ <!--Scratch project END-->
+ </div>
+ <%else%>
   <%=image_tag attachment.attachment.url(:preview)%>
+  <%end%>
 <tr><td>  <b>内容:</b>  <%= @user.content %></td></tr>
 
 <%=hidden_field_tag 'attachment_id',attachment.id%>
