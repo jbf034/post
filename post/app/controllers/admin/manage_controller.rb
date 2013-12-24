@@ -1,3 +1,4 @@
+require "spreadsheet"
 class Admin::ManageController < ApplicationController
 	#login
   before_filter :authorize,:except=>:login
@@ -42,5 +43,22 @@ end
    unless session[:user_id]
    redirect_to "/users"
   end
+end
+
+def spread_xls
+i=1
+@users=User.where(["id in (?)",params[:spread_id]])
+Spreadsheet.client_encoding="UTF-8"
+book=Spreadsheet::Workbook.new
+sheet1=book.create_worksheet
+sheet1.row(0).replace @users[1].attributes.keys
+@users.each do |user|
+arr=user.attributes.values
+sheet1.row(i).replace arr
+i+=1
+end
+sheet1.name="spread"
+book.write 'public/uploads/excel/1.xls'
+send_file 'public/uploads/excel/1.xls'
 end
 end

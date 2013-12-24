@@ -8,6 +8,7 @@
 						<a>等于</a>
 						<%=text_field_tag :seek_value,'',size: 20%>
 						<%=submit_tag "查找",class:"btn"%>
+					</form>
 		</div>
 	</div>
 
@@ -15,10 +16,10 @@
   $(document).ready(function(){
 		  $("#del").click(function(){
 			  var delid=new Array();
-			  for(var i=0,j=0;i<checkbox1.length;i++){
-			   
-				if(checkbox1[i].checked){
-				  delid[j++]=checkbox1[i].value;
+			  var slt=document.getElementsByName("checkbox1[]");
+			  for(var i=0,j=0;i<slt.length;i++){
+				if(slt[i].checked){
+				  delid[j++]=slt[i].value;
 				};
 
 			  };
@@ -43,22 +44,23 @@
 	<tr><th><input type="checkbox" id="allcheck">选择</th><th>编号</th><th>作者</th><th>班级</th><th>作品</th><th>附件</th>
   </thead>
   <tbody>
-
+<%=form_tag("spread_xls",id:"spread_form")%>
     <%@user.each do |p|%>
 	 	  <tr>
-      <td><input name="checkbox1" type="checkbox" value=<%=p.id%>></td>
+	  <%=hidden_field_tag "spread_id[]",p.id%>
+	<td><input name="checkbox1[]" type="checkbox" value=<%=p.id%>></td>
 	  <td><%=p.id%></td>
 	  <td><%=p.name%></td>
 	  <td><%=p.bj.bj_name%></td>
 	  <td><%=p.fname%></td>
  <%p.attachments.each do |att|%>
-
 	  <td><%=att.attachment.thumb%></td>
 	  </tr>
 	  <%end%>
 	<%end%>
 	<input type="button" id="del" class="btn" value="删除">
-	
+<input type="submit" class="btn" value="导出excel">
+</form>
   </tbody>
 </table>
 <div class="apple_pagination",align=right><%=will_paginate @user%></div>

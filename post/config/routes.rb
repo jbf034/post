@@ -21,6 +21,7 @@ end
 
 namespace :admin do
   match 'login'=>'manage#login'
+  match 'spread_xls'=>'manage#spread_xls'
   match 'seek(/:id)'=>'manage#seek'
   match 'delete_id'=>'manage#delete_id'
 end
